@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.fourfat.cordova.sharesdk" version="0.2.3">
+    <name>ShareSdk Cordova Plugin</name>
+    <author>CHC</author>
+    <description>ShareSdk Cordova Plugin</description>
+    <keywords>ShareSdk Cordova Plugin</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module src="www/sharesdk.js" name="ShareSdk">
+        <clobbers target="cordova.plugins.shareSdk" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="sharesdk.cordova">
+                <param name="ios-package" value="ShareSdkPlugin" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ShareSdkPlugin.h" />
+        <source-file src="src/ios/ShareSdkPlugin.m" />
+    </platform>
+</plugin>
