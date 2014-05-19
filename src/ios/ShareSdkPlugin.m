@@ -20,9 +20,9 @@
     NSString *imageNamed = [args objectForKey:@"imageNamed"];
 
      
-	//¹¹Ôì·ÖÏíÄÚÈİ
+	//æ„é€ åˆ†äº«å†…å®¹
 	id<ISSContent> publishContent = [ShareSDK content:title
-                                          defaultContent:@"µ¹²»ÁËµÄËş"
+                                          defaultContent:@"å€’ä¸äº†çš„å¡”"
                                           image:imageUrl
                                           title:title
                                           url:@"http://www.sharesdk.cn"
@@ -38,11 +38,11 @@
                      result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
                                                if (state == SSResponseStateSuccess)
                                                {
-                                                       NSLog(@"·ÖÏí³É¹¦");
+                                                       NSLog(@"åˆ†äº«æˆåŠŸ");
                                                }
                                                else if (state == SSResponseStateFail)
                                                {
-                                                       NSLog(@"·ÖÏíÊ§°Ü,´íÎóÂë:%d,´íÎóÃèÊö:%@", [error errorCode], [error errorDescription]);
+                                                       NSLog(@"åˆ†äº«å¤±è´¥,é”™è¯¯ç :%d,é”™è¯¯æè¿°:%@", [error errorCode], [error errorDescription]);
                                                }
                             }];
 }
