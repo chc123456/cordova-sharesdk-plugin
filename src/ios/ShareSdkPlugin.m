@@ -1,10 +1,3 @@
-//
-//  ShareSdkPlugin.m
-//  ShareSdkPlugin
-//
-//  Created by CHC on 14-1-7.
-//
-//
 
 #import "ShareSdkPlugin.h"
 #import <ShareSDK/ShareSDK.h>
